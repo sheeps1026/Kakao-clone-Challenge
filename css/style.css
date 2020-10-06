@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+/* components */
+@import "components/status-bar.css";
+
+/* screens */
+@import "screens/login.css";

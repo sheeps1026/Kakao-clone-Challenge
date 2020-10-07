@@ -18,6 +18,7 @@ body {
   display: flex;
   width: 33%;
   align-items: center;
+  font-size: 20px;
 }
 
 .status-bar__column:first-child {

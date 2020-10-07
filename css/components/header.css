@@ -1,0 +1,11 @@
+.header {
+  margin: 20px 10px 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+}
+
+.header-icon i {
+  margin-left: 7px;
+}

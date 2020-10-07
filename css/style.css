@@ -3,6 +3,8 @@
 /* components */
 @import "components/status-bar.css";
 @import "components/all.css";
+@import "components/header.css";
 
 /* screens */
 @import "screens/login.css";
+@import "screens/friends.css";

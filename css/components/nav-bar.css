@@ -10,10 +10,14 @@
 .nav-list {
   display: flex;
   justify-content: space-around;
-  padding: 5px 0px;
+  padding: 0px 0px;
 }
 
 .nav-btn {
   list-style: none;
   font-size: 30px;
+}
+
+.nav-link {
+  color: black;
 }

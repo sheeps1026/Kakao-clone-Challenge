@@ -1,7 +1,7 @@
 .header-sub {
   text-align: center;
   font-size: 23px;
-  background-color: #eeeeee;
+  background-color: #ffe082;
   padding: 5px 0px;
   margin: -20px 0px 0px 0px;
 }
@@ -11,10 +11,10 @@
 }
 
 .profile {
-  margin: 15px 0px 0px 0px;
+  margin: 15px 15px 0px 15px;
   display: flex;
   align-items: center;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -22,20 +22,21 @@
   border-radius: 20px;
   height: 70px;
   width: 70px;
-  margin-left: 15px;
 }
 
 .profile-img img {
-  border-radius: 30px;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .profile-name {
   font-size: 30px;
-  margin-left: 15px;
+  margin-left: 35px;
 }
 
 main {
   margin-left: 15px;
+  margin-right: 15px;
 }
 
 .friends-recommend {
@@ -66,7 +67,8 @@ main {
 }
 
 .friends-recommend__bottom-img img {
-  border-radius: 20px;
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .friends-recommend__bottom-text {

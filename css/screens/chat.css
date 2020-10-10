@@ -1,0 +1,170 @@
+.chat-header {
+  margin: 15px 0px 0px 0px;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+
+.chat-header__icon i {
+  margin-left: 20px;
+}
+
+.chat-header i {
+  color: black;
+}
+
+.sub-header {
+  background-color: #ffe082;
+  padding: 10px;
+  margin: 0px 150px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.talk-main {
+  margin-top: 25px;
+  border: none;
+}
+
+.talk-list {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.talk-img img {
+  border-radius: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+}
+
+.talk-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.talk-text__friend {
+  font-size: 25px;
+  opacity: 0.8;
+}
+
+.talk-text__text {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+.talk-text__message {
+  font-size: 25px;
+  background-color: #cbc26d;
+  padding: 5px 10px;
+  border-radius: 25px;
+  border-top-left-radius: 0px;
+}
+
+.talk-text__message-me {
+  font-size: 25px;
+  background-color: #cbc26d;
+  padding: 5px 10px;
+  border-radius: 25px;
+  border-top-right-radius: 0px;
+}
+
+.talk-text__time {
+  margin-left: 5px;
+}
+
+.talk-list__me {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: flex-end;
+}
+
+.talk-text__message-me {
+  order: 1;
+}
+
+.talk-text__time-me {
+  order: 0;
+  margin-right: 5px;
+}
+
+.keyboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.keyboard .keyboard-column:first-child {
+  width: 10%;
+}
+
+.keyboard .keyboard-column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.keyboard input {
+  height: 30px;
+  width: 100%;
+  border-radius: 25px;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.keyboard-column:last-child > i,
+.keyboard-column:last-child button {
+  position: absolute;
+  right: -5px;
+  top: 3px;
+}
+
+.keyboard-column:last-child > i {
+  right: 40px;
+  top: 10px;
+}
+
+.keyboard-column button {
+  background-color: #cbc26d;
+  border: none;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.keyborard-column button:focus,
+.keyboard-column button:active {
+  outline: none;
+}
+
+.keyboard .keyboard-column:first-child,
+.keyboard .fa-smile,
+.keyboard button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.keyboard:focus-within .keyboard-column:first-child,
+.keyboard:focus-within .fa-smile,
+.keyboard:focus-within button {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.keyboard:focus-within input {
+  width: 95vw;
+  transform: translateX(-12%) translateY(-80px);
+}
+
+.keyboard:focus-within {
+  transform: translateY(80px);
+}

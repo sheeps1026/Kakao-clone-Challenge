@@ -74,3 +74,27 @@ main {
   margin-left: 15px;
   font-size: 30px;
 }
+
+@keyframes hideScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#screen {
+  font-size: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe082;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  animation: hideScreen 1s ease-in-out forwards;
+  animation-delay: 2s;
+}

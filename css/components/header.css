@@ -1,5 +1,6 @@
 .header {
-  margin: 20px 15px 0px 15px;
+  margin: 15px 0px 0px 0px;
+  padding: 0px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,4 +9,21 @@
 
 .header-icon i {
   margin-left: 20px;
+}
+
+.header i {
+  color: black;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.header-icon .fa-cog {
+  animation: rotateCog 3s ease-in-out infinite;
 }

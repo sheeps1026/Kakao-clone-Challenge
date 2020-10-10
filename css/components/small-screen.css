@@ -1,0 +1,19 @@
+#small-screen {
+  background-color: #ffe082;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 35px;
+  top: 0;
+}
+
+@media screen and (max-width: 700px) {
+  #small-screen {
+    display: none;
+  }
+}

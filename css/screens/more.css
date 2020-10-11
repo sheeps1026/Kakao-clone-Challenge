@@ -90,6 +90,9 @@
 
 .bottom-icon {
   margin: 35px 15px 0px 15px;
+}
+
+.bottom-icon:first-child {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -112,8 +115,26 @@
   align-items: center;
 }
 
+@keyframes rotateMusic {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
 .bottom-icon__content-column img {
   border-radius: 20px;
+  animation: rotateMusic 10s ease-in-out infinite;
+}
+
+.bottom-delay img {
+  animation: rotateMusic 10s ease-in-out infinite;
+  animation-delay: 3s;
 }
 
 .bottom-icon__content-column span {

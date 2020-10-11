@@ -127,14 +127,26 @@
   }
 }
 
+@keyframes rotateMusic2 {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
 .bottom-icon__content-column img {
   border-radius: 20px;
-  animation: rotateMusic 10s ease-in-out infinite;
+  animation: rotateMusic 5s linear infinite;
 }
 
 .bottom-delay img {
-  animation: rotateMusic 10s ease-in-out infinite;
-  animation-delay: 3s;
+  animation: rotateMusic2 5s linear infinite;
+  animation-delay: 2s;
 }
 
 .bottom-icon__content-column span {

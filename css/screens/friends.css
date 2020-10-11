@@ -21,11 +21,32 @@
   border-radius: 20px;
   height: 70px;
   width: 70px;
+  animation: bingle 7s ease-in-out forwards;
+}
+
+@keyframes bingle {
+  from {
+    transform: translateX(800px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes bingle2 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }
 
 .profile-img img {
   border-radius: 25px;
   border: 1px solid rgba(0, 0, 0, 0.5);
+
+  animation: bingle2 7s ease-in-out forwards;
 }
 
 .profile-name {

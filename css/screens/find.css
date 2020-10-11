@@ -31,7 +31,7 @@ main {
 
 @keyframes showText {
   from {
-    opacity: 0.2;
+    opacity: 0;
     transform: translateX(360px);
   }
   to {
@@ -40,25 +40,27 @@ main {
   }
 }
 
-@keyframes largeText {
-  from {
-    transform: none;
-  }
-  to {
-    transform: scaleY(2);
-  }
-}
-
 .main-text {
   font-size: 20px;
   margin: 10px 15px 10px 15px;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  animation: showText 2s ease-in-out;
+  animation: showText 2s ease-in-out forwards;
 }
 
-.main-text:hover {
-  animation: largeText 1s ease-in-out forwards;
+.main-text__delay2 {
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.main-text__delay3 {
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+.main-text__delay4 {
+  animation-delay: 3s;
+  opacity: 0;
 }
 
 .bottom-nav {

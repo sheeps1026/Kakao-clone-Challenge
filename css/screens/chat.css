@@ -29,9 +29,38 @@
   border: none;
 }
 
+@keyframes showTalk {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .talk-list {
   display: flex;
   margin-bottom: 20px;
+  animation: showTalk 3s ease-in-out forwards;
+}
+
+.talk-list__me {
+  animation: showTalk 3s ease-in-out forwards;
+}
+
+.delay2 {
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+.delay3 {
+  opacity: 0;
+  animation-delay: 1.7s;
+}
+
+.delay4 {
+  opacity: 0;
+  animation-delay: 2.4s;
 }
 
 .talk-img img {

@@ -40,12 +40,25 @@ main {
   }
 }
 
+@keyframes largeText {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scaleY(2);
+  }
+}
+
 .main-text {
   font-size: 20px;
   margin: 10px 15px 10px 15px;
   padding-bottom: 5px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   animation: showText 2s ease-in-out;
+}
+
+.main-text:hover {
+  animation: largeText 1s ease-in-out forwards;
 }
 
 .bottom-nav {
@@ -88,6 +101,48 @@ main {
   opacity: 0.7;
 }
 
+.bottom-nav__content-img {
+  position: relative;
+}
+
 .bottom-nav__content-img img {
   border-radius: 15px;
+}
+
+.bottom-nav__content-img span {
+  padding: 0px 5px;
+}
+
+.bottom-nav__content-img span i {
+  margin-right: 7px;
+}
+
+.bottom-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 7px;
+  bottom: 9px;
+  padding: 0px 2px;
+  background-color: #b0bec5;
+  border-radius: 15px;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    color: red;
+    transform: scale(2);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.bottom-heart i:hover {
+  will-change: transform;
+  animation: heartBeat 3s ease-in-out infinite;
 }

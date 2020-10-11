@@ -44,6 +44,15 @@ a {
   text-decoration: none;
 }
 
+@keyframes largeChat {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
 .chat {
   margin: 15px 0px 0px 0px;
   padding-bottom: 5px;
@@ -51,6 +60,10 @@ a {
   justify-content: space-between;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   color: black;
+}
+
+.chat-text:hover {
+  animation: largeChat 2s ease-in-out forwards;
 }
 
 .chat-img img {

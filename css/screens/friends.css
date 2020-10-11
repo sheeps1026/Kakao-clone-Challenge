@@ -58,6 +58,7 @@ main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
 }
 
 .friends-recommend__bottom-img {
@@ -73,6 +74,31 @@ main {
 .friends-recommend__bottom-text {
   margin-left: 15px;
   font-size: 30px;
+}
+
+@keyframes rotateText {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotatey(360deg);
+  }
+}
+
+.text-anim {
+  animation: rotateText 4s ease-in-out infinite;
+  position: absolute;
+  top: 7px;
+  left: 370px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: white;
+  margin-left: 5px;
 }
 
 @keyframes hideScreen {

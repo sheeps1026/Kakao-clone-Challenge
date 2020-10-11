@@ -28,6 +28,7 @@
   font-size: 30px;
   transform: translateY(80px);
   animation: appearBtn 0.5s ease-in-out forwards;
+
   opacity: 0;
 }
 
@@ -44,5 +45,30 @@
 }
 
 .nav-link {
+  position: relative;
   color: black;
+}
+
+@keyframes rotateNotice {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.nav-notice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 14px;
+  left: 15px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  width: 25px;
+  height: 25px;
+  animation: rotateNotice 2s ease-in-out infinite;
 }
